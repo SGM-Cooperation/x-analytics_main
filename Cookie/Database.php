@@ -1,3 +1,5 @@
+<html>
+<body>
 <?
 function Connect($host = localhost,$user = "root",$pass = "",$DB = "demo"){
 /* Attempt MySQL server connection. Assuming you are running MySQL
@@ -16,3 +18,5 @@ function InsertValue($Value, Muster = [IP, Country, City, Time, Page]){
 
 InsertValue(["192,168.2.1", "DE", "LOE", "12:00", "Main"]);
 ?>
+  </body>
+</html>
