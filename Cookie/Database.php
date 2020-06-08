@@ -17,8 +17,8 @@ function InsertValue($Value, Muster = [IP, Country, City, Time, Page]){
 }
 
 
->
+?>
   
-  <p> <?php InsertValue(["192,168.2.1", "DE", "LOE", "12:00", "Main"]);> </p>
+  <p> <?php InsertValue(["192,168.2.1", "DE", "LOE", "12:00", "Main"]);?> </p>
   </body>
 </html>
