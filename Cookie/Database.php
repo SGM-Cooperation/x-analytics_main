@@ -9,10 +9,10 @@ server with default setting (user 'root' with no password) */
   }
 }
 
-function Insert($Value, Muster = [IP, Country, City, Time, Page]){
+function InsertValue($Value, Muster = [IP, Country, City, Time, Page]){
   $sql = "INSERT INTO persons ($Muster) VALUES ($Value)";
   echo $sql;
 }
 
-Insert(["192,168.2.1", "DE", "LOE", "12:00", "Main"]);
+InsertValue(["192,168.2.1", "DE", "LOE", "12:00", "Main"]);
 ?>
