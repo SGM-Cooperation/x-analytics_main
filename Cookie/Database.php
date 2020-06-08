@@ -1,6 +1,6 @@
 <html>
 <body>
-<?
+<?php
 function Connect($host = localhost,$user = "root",$pass = "",$DB = "demo"){
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
@@ -16,7 +16,9 @@ function InsertValue($Value, Muster = [IP, Country, City, Time, Page]){
   echo $sql;
 }
 
-InsertValue(["192,168.2.1", "DE", "LOE", "12:00", "Main"]);
-?>
+
+>
+  
+  <p> <?php InsertValue(["192,168.2.1", "DE", "LOE", "12:00", "Main"]);> </p>
   </body>
 </html>
