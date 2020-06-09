@@ -107,6 +107,10 @@
             echo "<br>";
             echo '<script> document.write(RoundCorrect((getCookie("End") - checkCookie("Start", new Date().getTime()) ) / 1000 /60) + " Min"); </script>';
             echo '<br>';
+            ?>
+    <script> document.write(getCookie("End")); </script>
+    <?php
+    
             echo '<script> document.write(getCookie("IP")); </script>';
             echo '<br>';
             echo '<script> locationIP(); </script>';
