@@ -6,7 +6,7 @@ class Datenbank {
     private $DB_Servername = "localhost";
     private $DB_User = "root";
     private $DB_Passwort = "";
-    private $DB_Name = "milanoDB";
+    private $DB_Name = "x-analytics";
     protected $stmt;
     protected $result;
 
