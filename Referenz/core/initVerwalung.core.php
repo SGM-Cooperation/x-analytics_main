@@ -8,15 +8,6 @@ if(isset($productVW)){
   $productVW = new Produktverwaltung();
 }
 
-if(isset($auftragVW)){
-  if (!($auftragVW instanceof Auftragsverwaltung)){
-    unset($auftragVW);
-    $auftragVW = new Auftragsverwaltung();
-  }
-}else {
-    $auftragVW = new Auftragsverwaltung();
-  }
-
 if(isset($userVW)){
   if (!($userVW instanceof Nutzerverwaltung)){
     unset($userVW);
@@ -24,15 +15,6 @@ if(isset($userVW)){
   }
 }else {
   $userVW = new Nutzerverwaltung();
-}
-
-if(isset($cart)){
-  if (!($cart instanceof Warenkorb)){
-    unset($cart);
-    $cart = new Warenkorb();
-  }
-}else {
-  $cart = new Warenkorb();
 }
 
 ?>
