@@ -5,7 +5,7 @@ require "core\autoload.core.php";
 ?>
 	<h1> User </h1>
 		
-  <form acticon="/test.php" method="post">
+  <form acticon="/test_form.php" method="post">
     <input type="text" name="username">
     <input type="number" name="role">
     <input type="email" name="email">
