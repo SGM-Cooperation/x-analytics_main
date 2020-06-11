@@ -72,7 +72,7 @@ class Produktverwaltung extends Datenbank
         // Fügt ein Neues Produkt mit Eintrag in Alle Tabellen hinzu
 
     }
-
+    public function update_Page($ID_Page, $new_URL){}
     public function get_Page_by_URL($URL)
     {
         $this->connect();
