@@ -1,7 +1,7 @@
 <?
 require "core\autoload.core.php";
     require "core\initVerwalung.core.php";
-    global $nutzerVW;
+    global $userVW ;
 
 	<h1> User </h1>
 		
@@ -13,5 +13,5 @@ require "core\autoload.core.php";
 		
     <button type="submit" name="action" value="0">Submit</button>
   </form>
-  $nutzerVW->adduser($_POST['username'], $_POST['role'], $_POST['email'], password_hash($_POST['password']))
+  $userVW->adduser($_POST['username'], $_POST['role'], $_POST['email'], password_hash($_POST['password']))
 ?>
