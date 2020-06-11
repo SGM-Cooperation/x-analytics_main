@@ -1,5 +1,6 @@
 <?php
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
+        $_POST['password'] = password_hash($_POST['password']);
         $message = var_dump($_POST);
     }
 ?>
