@@ -1,19 +1,17 @@
-<?
-require "core\autoload.core.php";
-    require "core\initVerwalung.core.php";
-    global $userVW ;
+<?php
+    if(isset($_POST['SubmitButton'])){ // Check if form was submitted
+
+        $input = $_POST['inputText']; // Get input text
+        $message = "Success! You entered: " . $input;
+    }
 ?>
-	<h1> User </h1>
-		
-  <form acticon="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-    <input type="text" name="username">
-    <input type="number" name="role">
-    <input type="email" name="email">
-    <input type="password" name=password>
-		
-    <button type="submit" name="action">Submit</button>
-  </form>
-<?
-  var_dump($_POST);
-  $userVW->adduser($_POST['username'], $_POST['role'], $_POST['email'], password_hash($_POST['password']));
-?>
+
+<html>
+    <body>
+        <form action="#" method="post">
+            <?php echo $message; ?>
+            <input type="text" name="inputText"/>
+            <input type="submit" name="SubmitButton"/>
+        </form>
+    </body>
+</html>
