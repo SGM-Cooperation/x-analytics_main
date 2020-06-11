@@ -5,13 +5,13 @@ require "core\autoload.core.php";
 ?>
 	<h1> User </h1>
 		
-  <form acticon="/test_form.php" method="post">
+  <form acticon="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
     <input type="text" name="username">
     <input type="number" name="role">
     <input type="email" name="email">
     <input type="password" name=password>
 		
-    <button type="submit" name="action" value="0">Submit</button>
+    <button type="submit" name="action">Submit</button>
   </form>
 <?
   var_dump($_POST);
