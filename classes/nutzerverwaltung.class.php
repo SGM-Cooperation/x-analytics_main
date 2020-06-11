@@ -3,17 +3,20 @@
 
 class Nutzerverwaltung extends Datenbank
 {
-  public function adduser($username, $role, $hashedpw)
+  public function changeUser($username, $email, $name){}
+  public function adduser($username, $role, $email, $hashedpw)
   {
     $this->connect();
-    $sql = "INSERT INTO User (username, role , password) VALUES (?, ?, ?)";
-    if($this->run_prepared($sql,"sis", array($username, $role, $hashedpw))){
+    $sql = "INSERT INTO User (username, role , email, password) VALUES (?, ?, ?, ?)";
+    if($this->run_prepared($sql,"siss", array($username, $role, $email, $hashedpw))){
       $this->stmtclose_disconnect();
       return true;
       }
     $this->stmtclose_disconnect();
   }
-
+  public function get_email_byID($ID_user){
+    
+  }
   public function deleteuser($userID)
   {
     $this->connect();
@@ -58,7 +61,8 @@ class Nutzerverwaltung extends Datenbank
       }
     $this->stmtclose_disconnect();
   }
-
+  public function get_name_by_id($ID){}
+  public function get_username_by_id($ID){}
   public function get_userid_by_name($username)
   {
     $this->connect();
