@@ -13,5 +13,6 @@ require "core\autoload.core.php";
 		
     <button type="submit" name="action" value="0">Submit</button>
   </form>
+		vardump($_POST)
   $userVW->adduser($_POST['username'], $_POST['role'], $_POST['email'], password_hash($_POST['password']))
 ?>
