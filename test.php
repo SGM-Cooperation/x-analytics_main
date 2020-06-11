@@ -1,8 +1,6 @@
 <?php
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
-
-        $input = $_POST['inputText']; // Get input text
-        $message = "Success! You entered: " . $input;
+        $message = var_dump($_POST);
     }
 ?>
 
@@ -10,7 +8,14 @@
     <body>
         <form action="#" method="post">
             <?php echo $message; ?>
-            <input type="text" name="inputText"/>
+            PW
+            <input type="password" name="password"/>
+            Role:
+            <input type="number" name="role"/>
+            Name:
+            <input type="text" name="name"/>
+            Mail:
+            <input type="email" name="email">
             <input type="submit" name="SubmitButton"/>
         </form>
     </body>
