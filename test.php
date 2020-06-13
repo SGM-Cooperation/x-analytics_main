@@ -5,7 +5,7 @@
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
        #$userVW->adduser($username, $role, $email, $hashedpw);
         $message = var_dump($_POST);
-        $hashedPW = password_hash($_POST['password']);
+        $hashedPW = password_hash("rasmuslerdorf", PASSWORD_DEFAULT);
     }
 ?>
 
