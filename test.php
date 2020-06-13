@@ -10,7 +10,7 @@ if(isset($userVW)){
 }else {
   $userVW = new Nutzerverwaltung();
 }*/
-echo getcwd() . "core/";
+echo getcwd() . "/core/FIle.php";
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
        #$userVW->adduser($username, $role, $email, $hashedpw);
         $message = var_dump($_POST);
