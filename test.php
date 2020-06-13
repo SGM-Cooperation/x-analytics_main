@@ -1,6 +1,6 @@
 <?php
 #require "core\autoload.core.php";
-require "core\initVerwalung.core.php";
+require "..\core\initVerwalung.core.php";
 
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
        #$userVW->adduser($username, $role, $email, $hashedpw);
