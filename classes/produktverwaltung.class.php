@@ -1,5 +1,5 @@
 <?php
-
+namespace classes;
 class Produktverwaltung extends Datenbank
 {
 

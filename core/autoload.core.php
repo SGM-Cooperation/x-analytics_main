@@ -4,7 +4,7 @@ spl_autoload_register("autoloader");
 
 function autoloader($className)
 {
-  $path = "classes/";
+  $path = $DOCUMENT_ROOT . '/classes/';
   $extension = ".class.php";
   $fullPath = $path . $className . $extension;
   if(!file_exists($fullPath)){
