@@ -15,7 +15,7 @@ $files1 = scandir($dir);
     <body>
         <form action="#" method="post">
             <?php 
-            echo var_dump($files1);
+            echo '<pre>' , var_dump($files1) , '</pre>';
             echo '<br>';
             echo $message; 
             echo $hashedPW;    
