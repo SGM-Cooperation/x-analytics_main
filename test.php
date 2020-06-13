@@ -1,14 +1,21 @@
 <?php
+require "core\autoload.core.php";
+require "core\initVerwalung.core.php";
+
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
-       
+       #$userVW->adduser($username, $role, $email, $hashedpw);
         $message = var_dump($_POST);
+        $hashedPW = password_hash($_POST['password']);
     }
 ?>
 
 <html>
     <body>
         <form action="#" method="post">
-            <?php echo $message; ?>
+            <?php 
+            echo $message; 
+            echo $hashedPW;    
+            ?>
             PW
             <input type="password" name="password"/>
             Role:
