@@ -1,7 +1,7 @@
 <?php
 #include 'core/autoload.core.php';
 #include 'core/initVerwalung.core.php';
-include $_SERVER["DOCUMENT_ROOT"] . "/core/initVerwalung.core.php";
+echo $_SERVER["DOCUMENT_ROOT"] . "/core/initVerwalung.core.php";
 
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
        #$userVW->adduser($username, $role, $email, $hashedpw);
