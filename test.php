@@ -1,7 +1,7 @@
 <?php
-/*
-include "../classes/nutzerverwaltung.class.php ";
 
+include  getcwd() . "/classes/nutzerverwaltung.class.php ";
+/*
 if(isset($userVW)){
   if (!($userVW instanceof Nutzerverwaltung)){
     unset($userVW);
@@ -9,8 +9,8 @@ if(isset($userVW)){
   }
 }else {
   $userVW = new Nutzerverwaltung();
-}*/
-echo getcwd() . "/core/FIle.php";
+}
+echo getcwd() . "/core/FIle.php";*/
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
        #$userVW->adduser($username, $role, $email, $hashedpw);
         $message = var_dump($_POST);
