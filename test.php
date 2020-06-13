@@ -1,7 +1,7 @@
 <?php
 
     try {
-        require "core/init.core.php";
+        require "core/autoload.core.php";
         require "core/initVerwalung.core.php";
 } catch (Exception $e) {
     echo 'Exception abgefangen: ',  $e->getMessage(), "\n";
