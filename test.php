@@ -23,7 +23,7 @@ echo getcwd() . "/core/FIle.php";*/
     <body>
         <form action="#" method="post">
             <?php 
-            echo '<pre>' , var_dump($files1) , '</pre>';
+            #echo '<pre>' , var_dump($files1) , '</pre>';
             echo '<br>';
             echo $message; 
             echo $hashedPW;    
