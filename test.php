@@ -1,6 +1,7 @@
 <?php
-
-include  "https://x-analytics.sgm-cooperation.com/classes/nutzerverwaltung.class.php ";
+#error_reporting(0);
+require "core\autoload.core.php"; require "core\initVerwalung.core.php";
+  session_start();
 /*
 if(isset($userVW)){
   if (!($userVW instanceof Nutzerverwaltung)){
