@@ -1,4 +1,5 @@
 <?php
+/*
 include "../classes/nutzerverwaltung.class.php ";
 
 if(isset($userVW)){
@@ -8,8 +9,8 @@ if(isset($userVW)){
   }
 }else {
   $userVW = new Nutzerverwaltung();
-}
-
+}*/
+echo getcwd();
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
        #$userVW->adduser($username, $role, $email, $hashedpw);
         $message = var_dump($_POST);
