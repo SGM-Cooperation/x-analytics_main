@@ -1,7 +1,10 @@
 <?php
-#error_reporting(0);
-require "core\autoload.core.php"; require "core\initVerwalung.core.php";
-  session_start();
+
+    try {
+    require "classes/nutzerverwaltung.class.php";
+} catch (Exception $e) {
+    echo 'Exception abgefangen: ',  $e->getMessage(), "\n";
+}
 /*
 if(isset($userVW)){
   if (!($userVW instanceof Nutzerverwaltung)){
