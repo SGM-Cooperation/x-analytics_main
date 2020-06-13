@@ -1,7 +1,8 @@
 <?php
 
     try {
-    require "classes/nutzerverwaltung.class.php";
+        require "core/init.core.php";
+        require "core/initVerwalung.core.php";
 } catch (Exception $e) {
     echo 'Exception abgefangen: ',  $e->getMessage(), "\n";
 }
