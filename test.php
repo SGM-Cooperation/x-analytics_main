@@ -1,6 +1,6 @@
 <?php
-include "core/autoload.core.php";
-include "core/initVerwalung.core.php";
+include 'core/autoload.core.php';
+include 'core/initVerwalung.core.php';
 
 
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
