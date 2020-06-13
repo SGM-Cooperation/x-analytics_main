@@ -1,6 +1,6 @@
 <?php
 
-include  getcwd() . "/classes/nutzerverwaltung.class.php ";
+include  "https://x-analytics.sgm-cooperation.com/classes/nutzerverwaltung.class.php ";
 /*
 if(isset($userVW)){
   if (!($userVW instanceof Nutzerverwaltung)){
