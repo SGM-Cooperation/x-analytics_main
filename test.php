@@ -1,7 +1,7 @@
 <?php
 $dir    = $_SERVER['DOCUMENT_ROOT'];
-require $dir . "core\autoload.core.php";
-require "$dir . "/core/initVerwalung.core.php";
+require '$dir . "core\autoload.core.php"';
+require '"$dir . "/core/initVerwalung.core.php"';
 
 
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
