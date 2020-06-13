@@ -3,6 +3,9 @@
  echo "Include success";
 class Nutzerverwaltung extends Datenbank
 {
+    public function getStatus(){
+        echo "Success";
+    }
   public function changeUser($username, $email, $name){}
   public function adduser($username, $role, $email, $hashedpw)
   {

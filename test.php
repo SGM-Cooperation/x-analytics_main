@@ -1,11 +1,10 @@
 <?php
-
-    try {
-        require "core/autoload.core.php";
-        require "core/initVerwalung.core.php";
-} catch (Exception $e) {
-    echo 'Exception abgefangen: ',  $e->getMessage(), "\n";
+function __autoload($classname) {
+    $filename = "./classes/". $classname .".php";
+    include_once($filename);
 }
+$userVW = Nutzerverwaltung::class;
+$userVW->getStatus();
 /*
 if(isset($userVW)){
   if (!($userVW instanceof Nutzerverwaltung)){
