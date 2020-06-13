@@ -1,7 +1,8 @@
 <?php
 include "classes/nutzerverwaltung.class.php";
-$userVW = Nutzerverwaltung::class;
+$userVW = Nutzerverwaltung();
 $userVW->getStatus();
+
 /*
 if(isset($userVW)){
   if (!($userVW instanceof Nutzerverwaltung)){
