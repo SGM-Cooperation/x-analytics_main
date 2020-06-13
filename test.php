@@ -2,8 +2,7 @@
 #require "core\autoload.core.php";
 #require "..\core\initVerwalung.core.php";
 $dir    = $_SERVER['DOCUMENT_ROOT'];
-echo $dir . "\core";
-#$files1 = scandir("$dir\core");
+$files1 = scandir($dir . "\core");
 
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
        #$userVW->adduser($username, $role, $email, $hashedpw);
