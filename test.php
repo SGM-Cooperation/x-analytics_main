@@ -1,6 +1,6 @@
 <?php
 $dir    = $_SERVER['DOCUMENT_ROOT'];
-require "$dir . "core\autoload.core.php"";
+require "$dir . "/core/autoload.core.php"";
 require "$dir . "/core/initVerwalung.core.php"";
 
 
