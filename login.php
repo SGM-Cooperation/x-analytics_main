@@ -2,8 +2,7 @@
 <html>
 <?php
 #error_reporting(0);
-require "core\autoload.core.php"; require "core\initVerwalung.core.php";
-  session_start();
+require "classes/nutzerverwaltung.class.php";
 ?>
 <head>
     <meta charset="utf-8">
