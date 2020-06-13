@@ -1,5 +1,5 @@
 <?php
-
+include "classes/nutzerverwaltung.class.php ";
 
 if(isset($userVW)){
   if (!($userVW instanceof Nutzerverwaltung)){
