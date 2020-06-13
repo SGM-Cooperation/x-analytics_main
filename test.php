@@ -1,8 +1,5 @@
 <?php
-function __autoload($classname) {
-    $filename = "./classes/". $classname .".php";
-    include_once($filename);
-}
+include "classes/nutzerverwaltung.class.php";
 $userVW = Nutzerverwaltung::class;
 $userVW->getStatus();
 /*
