@@ -5,6 +5,7 @@ class Nutzerverwaltung extends Datenbank
     public function getStatus(){
         echo "Success";
     }
+    /*
     public function changeUser($username, $email, $name){}
     public function adduser($username, $role, $email, $hashedpw)
     {
@@ -110,5 +111,5 @@ class Nutzerverwaltung extends Datenbank
         return password_verify($unHashedPW,$array[0]['password']);
         }
       }
-    }
+    }*/
 }
