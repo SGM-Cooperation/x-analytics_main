@@ -1,5 +1,5 @@
 <?php
-
+require 'datenbank.class.php';
 class Nutzerverwaltung extends Datenbank
 {
     public function getStatus(){
