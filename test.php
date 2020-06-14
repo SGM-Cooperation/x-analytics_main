@@ -2,7 +2,7 @@
 /*
 try {
 */
-    require 'nutzerverwaltung.class.php';
+    require 'test_form.php';
 
 /*
     $userVW = Nutzerverwaltung();

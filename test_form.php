@@ -1,3 +1,3 @@
 <?
-var_dump($_POST);
+echo "import Success";
 ?>
