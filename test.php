@@ -3,9 +3,10 @@
     $h = new Nutzerverwaltung();
 
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
-        #$h->adduser($username, $role, $email, $hashedpw);
-        $message = var_dump($_POST);
         $hashedPW = password_hash($_POST['password'] , PASSWORD_DEFAULT);
+        $h->adduser($_POST['username'], $_POST['role'], $_POST['email'], $hashedPW);
+        $message = var_dump($_POST);
+
     }
 
 ?>
