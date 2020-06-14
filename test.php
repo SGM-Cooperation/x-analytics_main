@@ -1,7 +1,10 @@
 <?php
 /*
 try {
-    include "nutzerverwaltung.class.php";
+*/
+    require 'nutzerverwaltung.class.php';
+
+/*
     $userVW = Nutzerverwaltung();
 }catch (Exception $e) {
     echo 'Exception abgefangen: ',  $e->getMessage(), "\n";
@@ -17,22 +20,28 @@ if(isset($userVW)){
 }else {
   $userVW = new Nutzerverwaltung();
 }
-echo getcwd() . "/core/FIle.php";*/
+echo getcwd() . "/core/FIle.php";
+
+*/
+/*
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
        #$userVW->adduser($username, $role, $email, $hashedpw);
         $message = var_dump($_POST);
         $hashedPW = password_hash($_POST['password'] , PASSWORD_DEFAULT);
     }
+*/
 ?>
-
+<!--
 <html>
     <body>
         <form action="#" method="post">
-            <?php 
+            <?php
+/*
             #echo '<pre>' , var_dump($files1) , '</pre>';
             echo '<br>';
             echo $message; 
-            echo $hashedPW;    
+            echo $hashedPW;
+ */
             ?>
             PW
             <input type="password" name="password"/>
@@ -46,3 +55,5 @@ echo getcwd() . "/core/FIle.php";*/
         </form>
     </body>
 </html>
+
+-->
