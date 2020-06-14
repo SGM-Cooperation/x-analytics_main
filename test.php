@@ -2,7 +2,9 @@
 /*
 try {
 */
-    require 'test_form.php';
+    require 'nutzerverwaltung.class.php';
+    $h = new Nutzerverwaltung();
+    $h->getStatus();
 
 /*
     $userVW = Nutzerverwaltung();
