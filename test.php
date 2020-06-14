@@ -1,6 +1,6 @@
 <?php
-include "classes/nutzerverwaltung.class.php";
-Nutzerverwaltung::getStatus();
+include "nutzerverwaltung.class.php";
+$userVW = Nutzerverwaltung();
 
 
 /*
