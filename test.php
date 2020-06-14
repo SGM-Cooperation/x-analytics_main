@@ -1,6 +1,10 @@
 <?php
-include "nutzerverwaltung.class.php";
-$userVW = Nutzerverwaltung();
+try {
+    include "nutzerverwaltung.class.php";
+    $userVW = Nutzerverwaltung();
+}catch (Exception $e) {
+    echo 'Exception abgefangen: ',  $e->getMessage(), "\n";
+}
 
 
 /*
