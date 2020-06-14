@@ -1,5 +1,7 @@
 <?php
-
+?>
+<p>datenbank OK</p>
+<?php
 class Datenbank {
 
     protected $con = false;

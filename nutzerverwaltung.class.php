@@ -1,5 +1,8 @@
 <?php
-require 'datenbank.class.php';
+?>
+<p>UserVW OK</p>
+<?php
+require_once 'datenbank.class.php';
 class Nutzerverwaltung extends Datenbank
 {
     public function getStatus(){
