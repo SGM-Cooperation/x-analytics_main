@@ -1,6 +1,6 @@
 <?php
 ?>
-<p>datenbank OK</p>
+<p></p>
 <?php
 class Datenbank {
 
