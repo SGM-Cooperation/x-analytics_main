@@ -1,4 +1,5 @@
 <?php
+/*
 try {
     include "nutzerverwaltung.class.php";
     $userVW = Nutzerverwaltung();
@@ -7,7 +8,7 @@ try {
 }
 
 
-/*
+
 if(isset($userVW)){
   if (!($userVW instanceof Nutzerverwaltung)){
     unset($userVW);
