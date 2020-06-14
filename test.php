@@ -4,7 +4,7 @@
 
     if(isset($_POST['SubmitButton'])){ // Check if form was submitted
         $hashedPW = password_hash($_POST['password'] , PASSWORD_DEFAULT);
-        $h->adduser($_POST['username'], $_POST['role'], $_POST['email'], $hashedPW);
+        echo $h->adduser($_POST['username'], $_POST['role'], $_POST['email'], $hashedPW);
         $message = var_dump($_POST);
         $h->getStatus();
     }
